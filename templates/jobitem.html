@@ -1,0 +1,14 @@
+<div class="career-option">
+            <h4>{{job['title']}}</h4>
+            <ul>
+                <li><strong>Location:</strong> {{job['location']}}</li>
+                {%if 'salary' in job %}
+                <li><strong>Salary:</strong> {{job['salary']}}</li>
+                {% endif %}
+            </ul>
+    <!-- Animated "Apply Now" button -->
+            <a href="#" class="btn btn-primary apply-button">
+                <span>Apply Now</span>
+                <span class="ripple"></span>
+            </a>
+</div>
